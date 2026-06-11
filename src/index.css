@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", "Space Grotesk", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --animate-shine: shine 1.5s ease-in-out infinite;
+  --animate-neon-pulse: neon-pulse 2s infinite alternate;
+  
+  @keyframes shine {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+  @keyframes neon-pulse {
+    0% { box-shadow: 0 0 5px rgba(34, 211, 238, 0.4), 0 0 10px rgba(34, 211, 238, 0.2); }
+    100% { box-shadow: 0 0 15px rgba(236, 72, 153, 0.6), 0 0 25px rgba(236, 72, 153, 0.4), 0 0 5px rgba(34, 211, 238, 0.3); }
+  }
+}
+
+/* Custom design classes for the Vibrant Palette */
+.vibrant-glass {
+  background: rgba(10, 10, 14, 0.82);
+  border: 2px solid #22d3ee;
+  box-shadow: 0 0 20px rgba(34, 211, 238, 0.25), inset 0 0 10px rgba(34, 211, 238, 0.1);
+  backdrop-filter: blur(12px);
+}
+
+.secondary-glass {
+  background: rgba(15, 10, 18, 0.8);
+  border: 2px solid #ec4899;
+  box-shadow: 0 0 15px rgba(236, 72, 153, 0.2), inset 0 0 8px rgba(236, 72, 153, 0.08);
+  backdrop-filter: blur(12px);
+}
+
+.warning-glass {
+  background: rgba(18, 10, 5, 0.85);
+  border: 2px solid #f97316;
+  box-shadow: 0 0 15px rgba(249, 115, 22, 0.2), inset 0 0 8px rgba(249, 115, 22, 0.08);
+  backdrop-filter: blur(12px);
+}
+
+.vibrant-btn-primary {
+  background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 50%, #ec4899 100%);
+  background-size: 200% 100%;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 4px 15px rgba(34, 211, 238, 0.4);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.vibrant-btn-primary:hover {
+  background-position: 100% 0;
+  box-shadow: 0 6px 20px rgba(236, 72, 153, 0.6);
+  transform: translateY(-2px) scale(1.02);
+}
+
+.vibrant-heading {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: -0.05em;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+::-webkit-scrollbar-thumb {
+  background: #3b82f6;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ec4899;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "3D Moshina O'yini",
+  "description": "Ajoyib 3D poyga o'yini: turli trassalar, moshinalar, ovoz effektlari va peshqadamlar jadvali bilan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
